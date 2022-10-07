@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/javascript--v1.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <h1 class="min-ej">Ejercicios de Javascript</h1>
+    <div class="bg-black">
+
+        <div class="letra">
+        </div>
+        <div class="jscol">
+            <img src="img/jscol.png" id="imagen-js">
+        </div>
+        <div class="contenedor-main">
+            <div class="ejercicios">
+                <h1 class="eje">Ejercicios</h1>
+                <div class="container" id="filter">
+                    <div class="botones">
+                        <div class="all3">
+                            <button class="boton-1" id="ejer1"> Ejercicio1 </button>
+                            <button class="boton-2" id="ejer2"> Ejercicio2 </button>
+                            <button class="boton-3" id="ejer3"> Ejercicio3 </button>
+                        </div>
+                        <div class="all5">
+                            <button class="boton-4" id="ejer4"> Ejercicio4 </button>
+                            <button class="boton-5" id="ejer5"> Ejercicio5 </button>
+                            <a href="formulario.html"> <button class="boton-6" id="ejer6"> Ejercicio6 </button></a>
+                        </div>
+                    </div>
+                    <div id="ventanaModal" class="modal">
+                        <div class="contenidoModal">
+                            <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+                            <input type="text" class="inp-cl" id="inp-id" placeholder="Digite caracter">
+                            <div class="all-btn">
+                                <button class="btn-lo" id="lo-btn">Longitud de la palabra</button>
+                                <button class="btn-my" id="my-btn">La palabra convertida en mayúsculas</button>
+                                <button class="btn-mn" id="mn-btn">La palabra convertida en minúsculas</button>
+                                <button class="btn-pc" id="pc-btn">El primer carácter de la palabra</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ventanaModal1" class="modal1">
+                        <div class="contenidoModal1">
+                            <span class="cerrarModal1"><i class="fa-solid fa-xmark"></i></span>
+                            <h2 class="convertidor1">Convertidor</h2>
+                            <div class="sel-1" id="1-sel">
+                                <select name="main" id="val-all">
+                                    <option id="out-f" value="1">Fahrenheit</option>
+                                    <option id="out-c" value="2">Celsius</option>
+                                    <option id="out-k" value="3">Kelvin</option>
+                                </select>
+                                <input type="text" name="caracter" id="fir-dc" placeholder="Digite Caracter">
+                            </div>
+                            <div class="separador">
+                                <h3 class="convertidor"> Convierte a </h3>
+                            </div>
+                            <div class="main-2" id="2-main">
+                                <select name="main2" id="all-selc">
+                                    <option id="into-f" value="4">Fahrenheit</option>
+                                    <option id="into-c" value="5">Celsius</option>
+                                    <option id="into-f" value="6">Kelvin</option>
+                                </select>
+                                <input type="text" name="digitar" id="sec-dc" placeholder="Digite Caracter">
+                            </div>
+                            <div class="calculate">
+                                <button class="compute" id="calcular">Calcular</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ventanaModal2" class="modal2">
+                        <div class="contenidoModal2">
+                            <span class="cerrarModal2"><i class="fa-solid fa-xmark"></i></span>
+                            <h2 class="tri-valor">Ingrese los valores</h2>
+                            <div class="tri-cl">
+                                <h4 class="igual"> Digite el primer lado</h4>
+                                <input type="number" class="triangulo1" id="tri-1">
+                                <h4 class="igual"> Digite el segundo lado</h4>
+                                <input type="number" class="triangulo2" id="tri-2">
+                                <h4 class="igual"> Digite el tercer lado</h4>
+                                <input type="number" class="triangulo3" id="tri-3">
+                            </div>
+                            <button class="triangle" id="tri">El triangulo es</button>
+                        </div>
+
+                    </div>
+                    <div id="ventanaModal3" class="modal3">
+                        <div class="contenidoModal3">
+                            <span class="cerrarModal3"><i class="fa-solid fa-xmark"></i></span>
+                            <h2 class="orienta">Seleccione los instructores, apellidos y que orienta</h2>
+                            <div class="ins-1" id="1-ins">
+                                <h3 class="nombres-2">Nombres</h3>
+                                <select name="nombr" id="nombre-1">
+                                    <option id="seleccion" value="">Seleccione</option>
+                                    <option id="out-t" value="1">Tatiana</option>
+                                    <option id="out-j" value="2">Jose</option>
+                                    <option id="out-c" value="3">Cristian</option>
+                                    <option id="out-lina" value="4">Carolina</option>
+                                    <option id="out-y" value="5">Yaneth</option>
+                                </select>
+                            </div>
+                            <div class="apell" id="2-ape">
+                                <h3 class="apelli2">Apellidos</h3>
+                                <select name="apell2" id="cont-ape">
+                                    <option id="seleccion" value="6">Seleccione</option>
+                                    <option id="into-f" value="7">Forero</option>
+                                    <option id="into-c" value="8">Buitrago</option>
+                                    <option id="into-f" value="9">Galindo</option>
+                                    <option id="into-f" value="10">Cabrera</option>
+                                    <option id="into-f" value="11">Castillo</option>
+                                </select>
+                            </div>
+                            <div class="ori" id="2-ori">
+                                <h3 class="activity">Actividad</h3>
+                                <select name="cont-ori" id="orient-ins">
+                                    <option id="seleccion" value="12">Seleccione</option>
+                                    <option id="into-f" value="13">Gestion Ambiental</option>
+                                    <option id="into-c" value="14">Desarrollo del proyecto</option>
+                                    <option id="into-f" value="15">(FrontEnd - Framework)</option>
+                                    <option id="into-f" value="16">Bases de datos </option>
+                                    <option id="into-f" value="17">(BackEnd - Framework)</option>
+                                </select>
+                            </div>
+                            <div class="mos-conta">
+                                <button class="showes" id="showes-2">Mostrar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FIGURAS -->
+                    <div id="ventanaModal4" class="modal4">
+                        <div class="contenidoModal4">
+                            <span class="cerrarModal4"><i class="fa-solid fa-xmark"></i></span>
+                            <h2 class="orienta">Oprima encima de cada figura</h2>
+                            <div class="shapes-1d">
+                                <input type="submit" id="cir-2d"><img src="img/circle.png" class="cir"
+                                    id="cirid" /></input>
+                                <p class="cen">Circulo</p>
+                                <input type="submit" id="cir-3d"><img src="img/rectangulo.png" class="rec"
+                                    id="recid" /></input>
+                                <p class="recta">Rectangulo</p>
+                                <input type="submit" id="cir-4d"><img src="img/cuadrado.png" class="cua"
+                                    id="cuaid" /></input>
+                                <p class="cuadr">Cuadrado</p>
+                                <input type="submit" id="cir-5d"><img src="img/triangulo.png" class="tri"
+                                    id="triid" /></input>
+                                <p class="trian">Triangulo</p>
+                            </div>
+                            <div class="modal44">
+                                <div class="modalContent">
+                                    <div class="contenidoModalc">
+                                        <span class="cerrarModalc"><i class="fa-solid fa-xmark"></i></span>
+                                        <img src="img/circle.png" class="cir-pg2">
+                                        <p class="cencir-i1">Circulo</p>
+                                        <div class="cal-circ-1">
+                                            <p class="a-c-1">Calcular el area de circulo</p>
+                                            <input type="number" id="area-cir-1" placeholder="Digite el radio">
+                                        </div>
+                                        <div class="peri-circ">
+                                            <p class="p-c">Calcular el perimetro de circulo</p>
+                                            <input type="number" id="area-cir2" placeholder="Digite numero">
+                                        </div>
+                                        <div class="bot-are">
+                                            <button class="cll-rr" id="espe"> Calcular Area</button>
+                                        </div>
+                                        <div class="peri-are">
+                                            <button class="cll-per" id="per-cal"> Calcular Perimetro</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal55">
+                                <div class="modalContentmc">
+                                    <div class="contenidoModalc">
+                                        <span class="cerrarModalcm"><i class="fa-solid fa-xmark"></i></span>
+                                        <img src="img/cuadrado.png" class="cir-pg1">
+                                        <p class="cencir-2">Cuadrado</p>
+                                        <div class="cal-circe">
+                                            <p class="a-c">Calcular el area del Cuadrado</p>
+                                            <input type="number" id="area-cir1">
+                                        </div>
+                                        <div class="peri-circ">
+                                            <p class="p-c">Calcular el perimetro del Cuadrado</p>
+                                            <input type="number" id="area-cir2">
+                                        </div>
+                                        <div class="bot-are">
+                                            <button class="cll-rr" id="espe1"> Calcular Area</button>
+                                        </div>
+                                        <div class="peri-are">
+                                            <button class="cll-per" id="cal"> Calcular Perimetro</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal6">
+                                <div class="modalContentre">
+                                    <div class="contenidoModalre">
+                                        <span class="cerrarModalre"><i class="fa-solid fa-xmark"></i></span>
+                                        <img src="img/rectangulo.png" class="cir-pg3">
+                                        <p class="cencir-3">Rectangulo</p>
+                                        <div class="cal-rec">
+                                            <p class="a-c1">Calcular el area del Rectangulo</p>
+                                            <input type="number" id="area-cir-rec">
+                                        </div>
+                                        <div class="peri-circ">
+                                            <p class="p-c1">Calcular el perimetro del Rectangulo</p>
+                                            <input type="number" id="area-cir-rec-r">
+                                        </div>
+                                        <div class="bot-are">
+                                            <button class="cll-rr" id="rec-a"> Calcular Area</button>
+                                        </div>
+                                        <div class="peri-are">
+                                            <button class="cll-per" id="rec-p"> Calcular Perimetro</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modalTri">
+                                <div class="modalContentTri">
+                                    <div class="contenidoModalTri">
+                                        <span class="cerrarModalTri"><i class="fa-solid fa-xmark"></i></span>
+                                        <img src="img/triangulo.png" class="cir-pg4">
+                                        <p class="cencir-4">Triangulo</p>
+                                        <div class="cal-tri">
+                                            <p class="a-c1-tr">Calcular el area del Triangulo</p>
+                                            <input type="number" id="base">
+                                            <input type="number" id="altura">
+                                        </div>
+                                        <div class="peri-circ">
+                                            <p class="p-c1">Calcular el perimetro del Rectangulo</p>
+                                            <input type="number" id="fisrt-long">
+                                            <input type="number" id="second-long">
+                                            <input type="number" id="third-long">
+                                        </div>
+                                        <div class="bot-are">
+                                            <button class="cll-rr" id="tri-a"> Calcular Area</button>
+                                        </div>
+                                        <div class="peri-are">
+                                            <button class="cll-per" id="tri-p"> Calcular Perimetro</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+
+    <script src="js/tallerEnd.js"></script>
+                        <script src="js/formulario.js"></script>
+                        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
